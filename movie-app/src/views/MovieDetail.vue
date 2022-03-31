@@ -18,7 +18,7 @@ export default {
         const route = useRoute();
 
         onBeforeMount(()=>{
-            debugger
+            
             fetch(`http://www.omdbapi.com/?apikey=${env.apiKey}&i=${route.params.id}&plot=full`)
             .then(response => response.json())
             .then(data =>{
