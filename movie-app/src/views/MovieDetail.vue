@@ -13,7 +13,7 @@ import { useRoute } from 'vue-router';
 import env from '@/env'
 
 export default {
-    setup() {
+    setup() { 
         const movie = ref({});
         const route = useRoute();
 
